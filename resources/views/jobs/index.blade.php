@@ -4,6 +4,7 @@
             <h1 class="font-bold text-4xl">Let's Find  Your Next Job</h1>
 
             <form action="" class="mt-6">
+                @csrf
                 <input type="text" placeholder="I'm looking for..." class="px-5 py-4 rounded-2xl bg-white/5 border-white/10 border w-full max-w-xl">
             </form>
         </section>
