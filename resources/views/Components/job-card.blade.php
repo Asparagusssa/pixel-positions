@@ -1,7 +1,7 @@
 @props(['job'])
 
 <x-panel class="flex flex-col text-center">
-    <a href="#">
+    <a href="{{ $job->url }}" target="_blank">
         <div class="self-start text-sm">{{ $job->employer->name }}</div>
 
         <div class="px-8 pt-8 flex-1 flex flex-col">
@@ -15,7 +15,7 @@
                 @endforeach
             </div>
 
-            <x-employer-logo :width="42"/>
+            <x-employer-logo :employer="$job->employer" :width="42"/>
         </div>
     </a>
 </x-panel>
